@@ -26,10 +26,6 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-
-
-
-
 // need:  
 //     all
 //     create
@@ -37,8 +33,8 @@ function objToSql(ob) {
 
 
 var orm = {
-  all: function(cb) {
-    var queryString = "SELECT * FROM burgers";
+  all: function(table, cb) {
+    var queryString = "SELECT * FROM" + table;
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
@@ -46,8 +42,8 @@ var orm = {
       cb(result);
     });
   },
-  create: function(cols, vals, cb) {
-    var queryString = "INSERT INTO burgers";
+  create: function(table, cols, vals, cb) {
+    var queryString = "INSERT INTO" + table;
 
     queryString += " (";
     queryString += cols.toString();
@@ -66,8 +62,8 @@ var orm = {
     });
   },
 
-  update: function(objColVals, condition, cb) {
-    var queryString = "UPDATE burgers";
+  update: function(table, objColVals, condition, cb) {
+    var queryString = "UPDATE" + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
@@ -83,6 +79,7 @@ var orm = {
       cb(result);
     });
   },
+}
 
 // Export the orm object for the model.
 module.exports = orm;
