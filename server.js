@@ -23,14 +23,14 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.get('/', function(req, res){
-    res.send('hi')
-});
+// app.get('/', function(req, res){
+//     res.send('hi')
+// });
 // Import routes and give the server access to them.
-var burgersController = require("./controllers/burgersController.js");
+var burgersController = require("./controllers/burgers_Controller.js");
 
 app.use("/burgers", burgersController);
 
-app.listen(port, function() {
-  console.log("App listening on PORT " + port);
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
 });
