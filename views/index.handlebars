@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head
+</head>
 						
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel primary</h3>
+    <h3 class="panel-title">Ready to Eat</h3>
   </div>
   <div class="panel-body">
-   {{#each burger}}
+
+   {{#each burgers}}
+   	{{#unless devoured}}
 	{{burger_name}},  <br>
+	{{/unless}}
 {{/each}}
+
   </div>
+
+
+ <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Devoured</h3>
+  </div>
+  <div class="panel-body">
+ 
+
+   {{#each burgers}}
+   	{{#if devoured}}
+	{{burger_name}},  <br>
+	{{/if}}
+{{/each}}
+
+  </div>
+
+
+
+
+
 </div>

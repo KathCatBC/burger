@@ -24,7 +24,7 @@ Your app will store every burger in a database, whether devoured or not.
 
 Check out this video of the app for a run-through of how it works.
 
-******  check video to see if date is "ordered time" or "devoured time"  ******************
+<!-- ******  check video to see if date is "ordered time" or "devoured time"  ****************** -->
 
 
 
