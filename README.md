@@ -1,5 +1,28 @@
 # burger
 
+
+
+To Do List
+
+add text box for new burgers
+add submit button for new burgers
+	call create
+
+code to add devour button to each burger
+	set devoured to true
+	update update time
+	call pull
+
+style
+
+
+re test sql schema & seeds
+
+
+
+
+
+
 Lines that are commented out are done.
 
 Week of 14 Homework Node Express Handlebars
@@ -133,7 +156,7 @@ View setup
 
 <!-- Inside your burger directory, create a folder named views. -->
 
-Create the index.handlebars file inside views directory.
+<!-- Create the index.handlebars file inside views directory.
 
 Create the layouts directory inside views directory.
 
@@ -141,7 +164,7 @@ Create the main.handlebars file inside layouts directory.
 
 Setup the main.handlebars file so it's able to be used by Handlebars.
 
-Setup the index.handlebars to have the template that Handlebars can render onto.
+Setup the index.handlebars to have the template that Handlebars can render onto. -->
 
 Create a button in index.handlebars that will submit the user input into the database.
 
