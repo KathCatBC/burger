@@ -11,7 +11,14 @@
 
    {{#each burgers}}
    	{{#unless devoured}}
-	{{burger_name}},  <br>
+	 {{burger_name}}
+
+    var newDevourBtn = $("<button>");
+    newDevourBtn.addClass("devour btn btn-default");
+    newDevourBtn.text("Devour");
+    newDevourBtn.data("id", burger.id);
+   
+   <br>
 	{{/unless}}
 {{/each}}
 
@@ -38,3 +45,9 @@
 
 
 </div>
+
+
+<form action="/users/create" method="POST">
+  <input type="text" name="burger" placeholder="place your burger order here"></input>
+  <input type="submit"></input>
+</form>
