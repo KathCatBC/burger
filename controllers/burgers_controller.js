@@ -32,9 +32,7 @@ router.post("/create", function(req, res){
 
 
 router.put("/update/:id", function(req, res){
-
-		console.log("body = "+JSON.stringify(req.params))
-	console.log("id " + req.params.id)
+	
 	burger.update({devoured: true}, "id=" + req.params.id, function(){
 			res.redirect("/")	
 	});

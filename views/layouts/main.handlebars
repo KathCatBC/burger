@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<!-- <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" /> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css">
+		<link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
 		<title>Eat Da Burger!</title>
 	</head>
 	<body>
-		<a href="/"><h1>Burgers</h1></a>
+
+
+<div class="container-fluid">        
+		<a href="/"><h1>Eat-Da-Burger</h1></a>
 
 		
-	
-		<br><br>
-		{{{ body }}}
+				
+					<br><br>
+					{{{ body }}}
 
-		<br><br><br><br>
+					<br><br>
 
+				<div class="new-burger">
+					<row>
+						<form action="/create" method="POST">
+			  				<p><input type="text" name="burgername" placeholder="place your burger order here"></input></p>
+			  				<p><input type="submit"></input></p>
+						</form>
+					</row>
+				</div>
+			</div>
 
-
-
-<form action="/create" method="POST">
-  <input type="text" name="burgername" placeholder="place your burger order here"></input>
-  <input type="submit"></input>
-</form>
-
-	</body>
-</html>
+		</body>
+	</html>
 
 
 <script>
