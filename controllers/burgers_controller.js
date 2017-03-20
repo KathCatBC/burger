@@ -15,11 +15,6 @@ router.get("/", function(req, res) {
 });
 
 
-
-// router.get("/new", function(req, res) {
-// 	res.render('burgers/new');
-// });
-
 router.post("/create", function(req, res){
 	console.log(req.body);
 	var cols = ['burger_name', 'devoured'];
