@@ -10,7 +10,6 @@ router.get("/", function(req, res) {
 	burger.all(function(data){
 		console.log(data)
 		res.render('index', { burgers: data} )
-		console.log("done with index")
 	})
 	
 });
@@ -22,18 +21,23 @@ router.get("/", function(req, res) {
 // });
 
 router.post("/create", function(req, res){
-	// res.send(req.body);
+	console.log(req.body);
 	var cols = ['burger_name', 'devoured'];
 	var vals = [req.body.burgername, false];
 
 	burger.create(cols, vals, function(response){
-		res.redirect('/burgers');
+		res.redirect('/');
 	});
 })
 
 
-router.put("/update", function(req, res){
-	console.log('put');
+router.put("/update/:id", function(req, res){
+
+		console.log("body = "+JSON.stringify(req.params))
+	console.log("id " + req.params.id)
+	burger.update({devoured: true}, "id=" + req.params.id, function(){
+			res.redirect("/")	
+	});
 });
 
 

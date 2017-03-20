@@ -8,17 +8,26 @@
     <h3 class="panel-title">Ready to Eat</h3>
   </div>
   <div class="panel-body">
+  <ul>
 
    {{#each burgers}}
-   	{{#unless devoured}}
-	 {{burger_name}}
+   	
 
-    var newDevourBtn = $("<button>");
-    newDevourBtn.addClass("devour btn btn-default");
-    newDevourBtn.text("Devour");
-    newDevourBtn.data("id", burger.id);
-   
-   <br>
+
+    {{#unless devoured}}
+	 
+
+   <p> {{this.burger_name}} 
+  
+      <form action="/update/{{this.id}}?_method=PUT" method="POST">
+      <!-- <input type="hidden" name=id value="{{this.id}}"> -->
+      <!-- <input type="hidden" name="id"> -->
+      <button type="submit">Devour</button>
+      </form>
+         </p>
+
+  
+
 	{{/unless}}
 {{/each}}
 
@@ -47,7 +56,3 @@
 </div>
 
 
-<form action="/users/create" method="POST">
-  <input type="text" name="burger" placeholder="place your burger order here"></input>
-  <input type="submit"></input>
-</form>

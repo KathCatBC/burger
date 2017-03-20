@@ -63,6 +63,8 @@ var orm = {
   },
 
   update: function(table, objColVals, condition, cb) {
+    
+    console.log("update orm.js")
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
