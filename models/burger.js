@@ -14,7 +14,7 @@ var burger = {
   },
   update: function(objColVals, condition, cb) {
    console.log('before update')
-   console.log("objColVals = " + objColVals  )
+   console.log("objColVals = " + JSON.stringify(objColVals))
    console.log("condition =" + condition  )
     orm.update("burgers", objColVals, condition, function(res) {
       console.log("after update")
