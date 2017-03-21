@@ -26,11 +26,6 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// need:  
-//     all
-//     create
-//     update
-
 
 var orm = {
   all: function(table, cb) {

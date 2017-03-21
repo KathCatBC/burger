@@ -1,0 +1,30 @@
+
+.center-align {
+	text-align: center
+}
+
+.headline {
+	text-align: center,
+	color: black,
+}
+
+.panel-title-align {
+	text-align: center,
+}
+
+#focusedInput {
+	width: 200px;
+}
+
+/*.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+ }*/
+/*.primary-panel-style {
+	margin: 10px 10px 10px 10px;
+	font-size: 15px;
+}*/
+
+

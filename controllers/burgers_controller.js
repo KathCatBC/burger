@@ -27,7 +27,8 @@ router.post("/create", function(req, res){
 
 
 router.put("/update/:id", function(req, res){
-	
+
+	// update date devoured to now
 	burger.update({devoured: true}, "id=" + req.params.id, function(){
 			res.redirect("/")	
 	});

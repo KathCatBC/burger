@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
 </head>
 						
 
 <!-- <div class="container-fluid">         -->
   <div class=row>
     <div class=col-md-6>    
-      <div class="panel panel-primary">
+      <div class="panel panel-success">
         <div class="panel-heading">
-          <h3 class="panel-title">Ready to Eat</h3>
+          <h3 class="panel-title panel-title-align">Ready to Eat</h3>
         </div>
         <div class="panel-body">
           
@@ -20,19 +21,16 @@
   
   <tbody>
    
-
-
-
-
-
-
-
             {{#each burgers}}
               {{#unless devoured}}
              <tr>   
               <td>{{this.id}}.  {{this.burger_name}} </td> 
                <td><form action="/update/{{this.id}}?_method=PUT" method="POST"> 
-                <button type="submit">Devour</button>
+
+
+
+               <!-- <a href="#" class="btn btn-primary btn-sm">Small button</a> -->
+                <button type="submit" class="btn btn-xs">Devour</button>
                </form></td>
               </tr>
         	   {{/unless}}
@@ -46,9 +44,9 @@
 
 <div class=row>
     <div class=col-md-6>    
-      <div class="panel panel-primary">
+      <div class="panel panel-danger">
         <div class="panel-heading">
-          <h3 class="panel-title">Devoured</h3>
+          <h3 class="panel-title panel-title-align">Devoured</h3>
         </div>
         <div class="panel-body">
           <ul>
@@ -65,38 +63,3 @@
     </div>
   </div>
 </div>
-<!-- </div> -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
- <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Devoured</h3>
-  </div>
-  <div class="panel-body">
- 
-
-   {{#each burgers}}
-   	{{#if devoured}}
-	{{burger_name}},  <br>
-	{{/if}}
-{{/each}}
-
-  </div>
-
-
-</div>
-
-
-</div> -->
-
-

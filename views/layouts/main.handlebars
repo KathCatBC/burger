@@ -1,53 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css">
-		<link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+		<link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
+		
 		<title>Eat Da Burger!</title>
 	</head>
+
 	<body>
 
-
-<div class="container-fluid">        
-		<a href="/"><h1>Eat-Da-Burger</h1></a>
-
-		
+		<div class="container-fluid">        
+			<div class="headline"><h1><center>Eat-Da-Burger!</center></h1></div>
 				
-					<br><br>
-					{{{ body }}}
-
-					<br><br>
-
-				<div class="new-burger">
-					<row>
-						<form action="/create" method="POST">
-			  				<p><input type="text" name="burgername" placeholder="place your burger order here"></input></p>
-			  				<p><input type="submit"></input></p>
-						</form>
-					</row>
-				</div>
-			</div>
-
-		</body>
-	</html>
-
-
-<script>
-
-/// put js for submit button
-	// make sure to put :
-    //event.preventDefault();
-
-    // to prevent page from returning0
-
-
-// put button on click event here
-	// call put with the id of the button clicked
-	// update devoured to true
-	// update_data = current_timestamp(6)
-
-
-
-
-</script>
+			<br>
+			{{{ body }}}
+			<br>
+			<form action="/create" method="POST">
+					   
+				<center><span class="help-block">Place your burger order here</span></center>
+  				<center><input class="form-control" name="burgername" id="focusedInput" type="text" placeholder="Your burger order"></center>
+				<center><input class="btn btn-info center-align" type="submit"></input></center>
+			</form>			
+		</div>
+	</body>
+</html>
