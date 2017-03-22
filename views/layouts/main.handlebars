@@ -12,15 +12,16 @@
 
 		<div class="container-fluid">        
 			<div class="headline"><h1><center>Eat-Da-Burger!</center></h1></div>
+			<center><img src="../../assets/img/devoured.jpeg" alt="Burger" style="width:304px;height:130px;"></center>
 				
-			<br>
 			{{{ body }}}
 			<br>
 			<form action="/create" method="POST">
-					   
-				<center><span class="help-block">Place your burger order here</span></center>
-  				<center><input class="form-control" name="burgername" id="focusedInput" type="text" placeholder="Your burger order"></center>
+
+				<center><span class="help-block order-style">Place your burger order here:</span></center>
+  				<center><input class="form-control" name="burgername" id="focusedInput" type="text" placeholder="Your burger order"></center><br>
 				<center><input class="btn btn-info center-align" type="submit"></center>
+
 			</form>			
 		</div>
 	</body>

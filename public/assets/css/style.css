@@ -1,31 +1,25 @@
 
 .center-align {
-	text-align: center
+	text-align: center;
 }
 
 .headline {
-	text-align: center,
-	color: black,
+	text-align: center;
+	color: black;
 }
 
-.panel-title-align {
-	text-align: center,
+.panel-title-style {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
 }
 
 #focusedInput {
 	width: 200px;
 }
 
-
-/*.container-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
- }*/
-/*.primary-panel-style {
-	margin: 10px 10px 10px 10px;
-	font-size: 15px;
-}*/
-
-
+.order-style {
+	color: black;
+	font-weight: bold;
+}

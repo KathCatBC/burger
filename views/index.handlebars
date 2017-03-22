@@ -4,13 +4,11 @@
     <link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
 </head>
 						
-
-<!-- <div class="container-fluid">         -->
-  <div class=row>
-    <div class=col-md-5>    
+  <div class="row">
+    <div class="col-md-5">    
       <div class="panel panel-success">
         <div class="panel-heading">
-          <h3 class="panel-title panel-title-align">Ready to Eat</h3>
+          <h3 class="panel-title panel-title-style"><center>Ready to Eat</center></h3>
         </div>
         <div class="panel-body">
           <table class="table">
@@ -20,7 +18,7 @@
                   <tr>   
                     <td>{{this.id}}.  {{this.burger_name}} </td> 
                     <td><form action="/update/{{this.id}}?_method=PUT" method="POST"> 
-                    <button type="submit" class="btn btn-xs">Devour</button>
+                    <button type="submit" class="btn btn-primary btn-xs">Devour</button>
                     </form></td>
                   </tr>
                 {{/unless}}
@@ -31,11 +29,11 @@
       </div>
     </div>
 
-    <div class=row>
-      <div class=col-md-5>    
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">    
         <div class="panel panel-danger">
           <div class="panel-heading">
-            <h3 class="panel-title panel-title-align">Devoured</h3>
+            <h3 class="panel-title panel-title-style"><center>Devoured</center></h3>
           </div>
           <div class="panel-body">
             <ul>
