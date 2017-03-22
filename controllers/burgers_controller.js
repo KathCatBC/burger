@@ -8,7 +8,6 @@ var burger = require('../models/burger.js');
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
 	burger.all(function(data){
-		console.log(data)
 		res.render('index', { burgers: data} )
 	})
 	
@@ -27,8 +26,6 @@ router.post("/create", function(req, res){
 
 
 router.put("/update/:id", function(req, res){
-
-	// update date devoured to now
 	burger.update({devoured: true}, "id=" + req.params.id, function(){
 			res.redirect("/")	
 	});
