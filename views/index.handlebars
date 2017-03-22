@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../../assets/css/style.css" type="text/css"> -->
 </head>
 						
   <div class="row">
@@ -10,8 +10,8 @@
         <div class="panel-heading">
           <h3 class="panel-title panel-title-style"><center>Ready to Eat</center></h3>
         </div>
-        <div class="panel-body">
-          <table class="table">
+        <div class="panel-body panel-style">
+          <table class="table burger-table">
             <tbody>
               {{#each burgers}}
                 {{#unless devoured}}
@@ -35,7 +35,7 @@
           <div class="panel-heading">
             <h3 class="panel-title panel-title-style"><center>Devoured</center></h3>
           </div>
-          <div class="panel-body">
+          <div class="panel-body panel-style">
             <ul>
               {{#each burgers}}
                 {{#if devoured}}
