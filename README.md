@@ -1,4 +1,4 @@
-To use the Burger App
+To use the Burger App:
 
 The burgers on the left are ready to be devoured.
 	Just click on the devour button and the burger will be removed from the list.
